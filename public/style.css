@@ -36,4 +36,6 @@ form {
     border: 1px solid #ccc;
     padding: 10px;
     background: white;
+    width: 100%;
+    box-sizing: border-box; 
 }
