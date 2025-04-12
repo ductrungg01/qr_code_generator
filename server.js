@@ -17,6 +17,7 @@ const server = http.createServer((req, res) => {
         fs.readFile('./public/index.html', function(err, data) {
             if (err) throw err;
 
+            // https://apidog.com/articles/what-is-http-content-type/ 
             res.writeHead(200, {'Content-Type': 'text/html'});
             res.end(data);
         });
